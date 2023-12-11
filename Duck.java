@@ -1,7 +1,7 @@
 
 import java.time.LocalDate;
 
-public class Duck extends Animal {
+public class Duck extends Animal implements GoableSlow, Flyable, Swimable {
     public Duck() {
         super();
     }
@@ -13,5 +13,25 @@ public class Duck extends Animal {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public double getFlySpeed() {
+        return Flyable.super.getFlySpeed();
+    }
+
+    @Override
+    public void run() {
+
+    }
+
+    @Override
+    public double getSpeedSlowRun() {
+        return GoableSlow.super.getSpeedSlowRun();
+    }
+
+    @Override
+    public double getSwimSpeed() {
+        return Swimable.super.getSwimSpeed();
     }
 }

@@ -1,7 +1,7 @@
 
 import java.time.LocalDate;
 
-public class Dog extends Animal implements Goable{
+public class Dog extends Animal implements GoableFast{
     public Dog() {
         super();
     }

@@ -8,7 +8,7 @@ public class VeterinaryClinic {
         staffs.add(staff);
         return this;
     }
-    public VeterinaryClinic dismissStaff(Staff staff){
+    public void dismissStaff(Staff staff){
         staffs.remove(staff);
     }
 

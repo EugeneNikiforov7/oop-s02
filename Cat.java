@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Cat extends Animal implements Speakble, Goable {
+public class Cat extends Animal implements Speakble, GoableSlow {
     public Cat() {
         super();
     }
@@ -25,8 +25,8 @@ public class Cat extends Animal implements Speakble, Goable {
     }
 
     @Override
-    public double getRunSpeed() {
-        return Goable.super.getRunSpeed();
+    public double getSpeedSlowRun() {
+        return GoableSlow.super.getSpeedSlowRun();
     }
 
 }

@@ -19,14 +19,21 @@ public class Main {
         ArrayList<Animal> animals = new ArrayList<>();
         animals.add(cat);
         animals.add(dog);
-        dog.LiveCycle();
+//        dog.LiveCycle();
 
-        fish.breathe();
-        fish.go();
+//        fish.breathe();
+//        fish.go();
         VeterinaryClinic clinic = new VeterinaryClinic();
         clinic.addPatient(cat).addPatient(dog).addPatient(duck);
-        System.out.println(clinic.getPatients());
-        System.out.println(clinic.getGoable());
-
+//        System.out.println(clinic.getPatients());
+//        System.out.println(clinic.getGoable());
+        Nurse nurse = new Nurse("Ira", "medsestra");
+        Doctor doctor = new Doctor("Ivan", "Terapevt", nurse);
+        System.out.println(doctor);
+        doctor.treat();
+        nurse.injection();
+        Horse horse = new Horse();
+        System.out.println(duck.getSwimSpeed());
+        System.out.println(duck.getFlySpeed());
     }
 }
