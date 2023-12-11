@@ -30,10 +30,12 @@ public class Main {
         Nurse nurse = new Nurse("Ira", "medsestra");
         Doctor doctor = new Doctor("Ivan", "Terapevt", nurse);
         System.out.println(doctor);
+        clinic.addStaff(doctor).addStaff(nurse);
         doctor.treat();
         nurse.injection();
         Horse horse = new Horse();
         System.out.println(duck.getSwimSpeed());
         System.out.println(duck.getFlySpeed());
+        System.out.println(clinic.getStaffs());
     }
 }

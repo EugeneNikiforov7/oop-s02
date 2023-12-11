@@ -11,6 +11,9 @@ public class VeterinaryClinic {
     public void dismissStaff(Staff staff){
         staffs.remove(staff);
     }
+    public List<Staff> getStaffs(){
+        return staffs;
+    }
 
     public List<Animal> getPatients(){
         return patients;
